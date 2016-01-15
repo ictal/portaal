@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
  // Defining a function to set size for #hero 
     function fullscreen(){
-        jQuery('#pagina1, #pagina2, #pagina3, #pagina4, #pagina5, #pagina6').css({
+        jQuery('#welkom, #rooster, #cijfers, #aanwezigheid, #leermiddelen, #planners').css({
             height: jQuery(window).height()
         });
     }

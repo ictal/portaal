@@ -49,7 +49,7 @@ li {
 
 /* PAGES */
 
-#pagina1 {
+#welkom {
     position: relative;
     color: white;
     margin-top: 150px;
@@ -59,35 +59,35 @@ li {
     z-index: 8;
 }
 
-#pagina2 {
+#rooster {
     position: relative;
     color: black;
     background-color: white;
     z-index: 8;
 }
 
-#pagina3 {
+#cijfers {
     position: relative;
     color: white;
     background-color: gray;
     z-index: 8;
 }
 
-#pagina4 {
+#aanwezigheid {
     position: relative;
     color: black;
     background-color: white;
     z-index: 8;
 }
 
-#pagina5 {
+#leermiddelen {
     position: relative;
     color: white;
     background-color: gray;
     z-index: 8;
 }
 
-#pagina6 {
+#planners {
     position: relative;
     color: black;
     background-color: white;

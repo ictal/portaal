@@ -1,13 +1,19 @@
 $(document).ready(function(){
     $('a[href^="#"]').click(function(event) {
-
-        var target = $( $(this).attr('href') );
+        var target = this.hash,
+            $target = $(target),
+            $main = $('main'),
+            scrollTop = $main.scrollTop();
 
         if( target.length ) {
             event.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
+            scrollTop += $target.position().top;
+            $main.stop('smoothscroll').animate({
+                scrollTop: scrollTop,
+                queue: 'smoothscroll'
+            }, 1000, function() {
+                window.location.hash = target;
+            });
         }
 
     });

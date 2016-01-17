@@ -14,7 +14,7 @@ a {
 
 /* NAVBAR */
 
-nav {
+#navigatie {
     height: 150px;
     position: fixed;
     top: 0;
@@ -23,16 +23,12 @@ nav {
     z-index: 10;
 }
 
-.navblock {
-    position: absolute;
-}
-
-.roclogo {
+#navigatie .roclogo {
     height: 80px;
     padding: 20px;
 }
 
-ul {
+#navigatie ul {
     width: auto;
     display: inline-block;
     font-size: 25px;
@@ -41,10 +37,19 @@ ul {
     margin-right: auto;
 }
 
-li {
+#navigatie li {
     list-style-type: none;
     display: inline-block;
     padding: 20px;
+}
+
+main {
+    position: fixed;
+    left:0;
+    right:0;
+    top:150px;
+    bottom:0;
+    overflow: auto;
 }
 
 /* PAGES */
@@ -52,11 +57,11 @@ li {
 #welkom {
     position: relative;
     color: white;
-    margin-top: 150px;
     background-image: url(../img/School.png);
     background-size: cover;
     width: 100%;
     z-index: 8;
+    text-align: center;
 }
 
 #rooster {
@@ -96,17 +101,16 @@ li {
 
 /* PAGINA 1 (WELKOMSCHERM) */
 
-.welkomtekst {
+#welkom .welkomtekst {
     height: 40%;
     width: 40%;
     font-size: 20px;
-    text-align: center;
     margin: 0 auto;
     padding-top: 50px;
     text-shadow: 0 0 28px rgba(0, 0, 0, 1);
 }
 
-.welkomschermbutton {
+#welkom .welkomschermbutton {
     height: 150px;
     margin: 0 auto;
     width: auto;
@@ -115,20 +119,21 @@ li {
 }
 
 @media screen and (max-width: 1025px) {
-    ul {
+
+    #navigatie ul {
         font-size: 15px;
         margin-top: 5%;
     }
-    
-    li {
+
+    #navigatie li {
         padding: 10px;
     }
     
-    .welkomtekst {
+    #welkom .welkomtekst {
         width: 60%;
     }
-    
-    .welkomschermbutton {
+
+    #welkom .welkomschermbutton {
         height: 75px;
         position: relative;
         margin-top: 250px;

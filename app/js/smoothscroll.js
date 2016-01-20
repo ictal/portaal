@@ -5,7 +5,7 @@ $(document).ready(function(){
             $main = $('main'),
             scrollTop = $main.scrollTop();
 
-        if( target.length ) {
+        if( $target.length ) {
             event.preventDefault();
             scrollTop += $target.position().top;
             $main.stop('smoothscroll').animate({

@@ -47,12 +47,16 @@ main {
     position: fixed;
     left:0;
     right:0;
-    top:150px;
+    top:0;
     bottom:0;
     overflow: auto;
 }
 
 /* PAGES */
+
+.pagina {
+    padding-top: 150px;
+}
 
 #welkom {
     position: relative;

@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('a[href^="#"]').click(function(event) {
         var target = this.hash,
             $target = $(target),
-            $main = $('main'),
+            $main = $('body,html'),
             scrollTop = $main.scrollTop();
 
         if( $target.length ) {

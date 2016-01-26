@@ -9,14 +9,12 @@
         <link rel="stylesheet" href="css/hover.css" media="all">
         <link rel="stylesheet" href="css/hover-min.css" media="all">
         <script src="js/smoothscroll.js"></script>
-        <script src="js/fullscreen.js"></script>
         <script src="js/selector.js"></script>
         <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
     </head>
     <body>
 
         <nav id="navigatie">
-            <img src="img/ROC-rand.png" class="kleurenrandje" alt="ROC kleuren rand">
             <a href="#welkom"><img src="img/ROC-logo.png" class="roclogo" alt="ROC Logo"></a>
             <ul>
                 <li>
@@ -44,55 +42,89 @@
                         Planners
                     </a>
                 </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
             </ul>
         </nav>
 
         <main>
 
-            <div id="welkom" class="pagina">
-                <div class="welkomtekst">
+            <section id="welkom" class="pagina">
+                <article class="welkomtekst">
                     <img src="img/ROC-logo-wit.png" class="welkomtekstlogo" alt="welkoms tekst">
                     <h1>Welkom bij het <strong>ROC Leiden</strong> Portaal!</h1>
                     <p>Welkom bij het leerlingen portaal van de <strong>ICT Academie</strong>! Klik op de<br/>
                         navigatie hierboven om verschillende onderdelen te kunnen zien!</p>
-                </div>
+                </article>
                 <footer>
-                    <a href="#rooster"><img src="img/Button.png" class="welkomschermbutton" alt="Scroll knop"></a>
+                    <a class="welkomschermbutton" href="#rooster"><img src="img/Button.png" alt="Scroll knop"></a>
                 </footer>
-            </div>
+            </section>
 
-            <div id="rooster" class="pagina">
-                <article class="content">
-                    <h2>Roosters</h2>
+            <section id="rooster" class="pagina">
+                <h2>Roosters</h2>
+                <article>
                     <img src="img/schedule.jpg" class="schedule">
                 </article>
-            </div>
+            </section>
 
-            <div id="cijfers" class="pagina">
-                <article class="content">
-                    <h2>Cijfers</h2>
+            <section id="cijfers" class="pagina">
+                <h2>Cijfers</h2>
+                <article>
                     <img src="img/gradebook.png" class="gradebook">
                 </article>
-            </div>
+            </section>
 
-            <div id="aanwezigheid" class="pagina">
-                <article class="content">
-                    <h2>Aanwezigheid</h2>
+            <section id="aanwezigheid" class="pagina">
+                <h2>Aanwezigheid</h2>
+                <article>
                     <img src="img/aanwezig-afwezig.jpg" class="aanwezig">
                 </article>
-            </div>
+            </section>
 
-            <div id="leermiddelen" class="pagina">
-                <article class="content">
-                    <h2>Leermiddelen</h2>
+            <section id="leermiddelen" class="pagina">
+                <h2>Leermiddelen</h2>
+                <article>
                     <img src="img/leermiddelen.jpg" class="leermiddelen">
                 </article>
-            </div>
+            </section>
 
-            <div id="planners" class="pagina">
+            <section id="planners" class="pagina">
                 <h2>Planner</h2>
-                <p>Pagina 6</p>
-            </div>
+                <article>
+                    <img src="img/leermiddelen.jpg" class="leermiddelen">
+                </article>
+            </section>
+
+            <section id="contact" class="pagina">
+                <h2>Contact</h2>
+                <article>
+                    <h3>Betrokkenen</h3>
+                    <dl id="betrokkenen">
+                        <dt>Projectleider:</dt>
+                        <dd>M. Akerboom</dd>
+
+                        <dt>Projectleider:</dt>
+                        <dd>M. Akerboom</dd>
+
+                        <dt>Ontwikkelaars:</dt>
+                        <dd>Mike Collet</dd>
+                        <dd>Damian Alkemade</dd>
+                        <dd>Dennis Angevaare</dd>
+                        <dd>Jason Langeveld</dd>
+                        <dd>Johan Zuiderduijn</dd>
+                        <dd>Julian Mills</dd>
+                        <dd>Luuk Haijes</dd>
+                        <dd>Santino den Brave</dd>
+                        <dd>Stan Ravensbergen</dd>
+                        <dd>Duco Lindner</dd>
+                        <dd>Max Loenen</dd>
+                    </dl>
+                </article>
+            </section>
         </main>
 
     </body>

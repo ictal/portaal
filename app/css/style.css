@@ -76,7 +76,9 @@ h6 {
     width: 100%;
     border-bottom: 1px solid lightgray;
     background: rgba(255, 255, 255, 0.8) url(../img/ROC-rand.png) no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
+    padding-top: 0.89vw;
+    box-sizing: border-box;
     z-index: 10;
 }
 
@@ -121,7 +123,7 @@ h6 {
     margin: 0 auto;
 }
 
-.pagina article > img {
+.pagina > article > img {
     display: block;
     max-width: 100%;
     margin: 0 auto;
@@ -190,15 +192,10 @@ h6 {
 
     #navigatie ul {
         font-size: 15px;
-        margin-top: 5%;
     }
 
     #navigatie li a {
         padding: 10px;
-    }
-
-    #welkom .welkomtekst {
-        width: 60%;
     }
 
     #welkom .welkomschermbutton {

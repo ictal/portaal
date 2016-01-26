@@ -1,10 +1,39 @@
+/*
+Randkleuren:
+    #0480ad welkom
+    #7262a8 rooster
+    #de2880 cijfers
+    #982045 aanwezigheid
+    #ea271e leermiddelen
+    #f18e25 planners
+    #edd034 contact
+    #0798d3
+    #cdd12f
+    #008d67
+*/
+
 /* Main CSS */
+
+* {
+    outline: 1px solid;
+}
 
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 14px;
+    line-height: 1.428;
+}
+
+body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
 }
 
 a {
@@ -12,14 +41,46 @@ a {
     color: black;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 257%;
+}
+
+h2 {
+    font-size: 214%;
+}
+
+h3 {
+    font-size: 171%;
+}
+
+h4 {
+    font-size: 129%;
+}
+
+h5 {
+    font-size: 100%;
+}
+
+h6 {
+    font-size: 86%;
+}
+
 /* NAVBAR */
 
 #navigatie {
+    font-family: 'Open Sans', sans-serif;
     height: 150px;
     position: fixed;
     top: 0;
+    width: 100%;
     border-bottom: 1px solid lightgray;
-    background-color: RGBA(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8) url(../img/ROC-rand.png) no-repeat;
+    background-size: 100%;
     z-index: 10;
 }
 
@@ -31,95 +92,102 @@ a {
 #navigatie ul {
     width: auto;
     display: inline-block;
-    font-size: 25px;
+    font-size: 130%;
     position: fixed;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 0;
+    padding: 0;
 }
 
 #navigatie li {
     list-style-type: none;
     display: inline-block;
-    padding: 20px;
+    margin: 0 5px;
 }
 
-main {
-    position: fixed;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    overflow: auto;
+#navigatie li a {
+    display: block;
+    padding: 10px 20px;
 }
 
 /* PAGES */
 
 .pagina {
-    padding-top: 150px;
+    position: relative; /* Om het positioneren van child elements te baseren */
+    min-height: 100vh; /* Elke 'pagina' is  minimaal net zo hoog als het scherm */
+    box-sizing: border-box; /* De height regels gaan nu tot en met de rand, dus inclusief padding, normaal is dat exclusief */
+    padding-top: 150px; /* Omdat de header over onze content valt, heeft elke 'pagina' ruimte nodig binnen de border, dus padding */
+    padding-bottom: 50px; /* Ruimte tussen de laatste content en de rand van de 'pagina' */
+}
+
+.pagina > article {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pagina article > img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 #welkom {
-    position: relative;
     color: white;
-    background-image: url(../img/School.png);
+    background: #0480ad url(../img/School.png);
     background-size: cover;
     width: 100%;
-    z-index: 8;
     text-align: center;
 }
 
 #rooster {
-    position: relative;
-    color: black;
-    background-color: white;
-    z-index: 8;
+    color: #000000;
+    background-color: #7262a8;
+    text-align: center;
 }
 
 #cijfers {
-    position: relative;
-    color: white;
-    background-color: gray;
-    z-index: 8;
+    color: #ffffff;
+    background-color: #de2880;
 }
 
 #aanwezigheid {
-    position: relative;
-    color: black;
-    background-color: white;
-    z-index: 8;
+    color: #ffffff;
+    background-color: #982045;
 }
 
 #leermiddelen {
-    position: relative;
-    color: white;
-    background-color: gray;
-    z-index: 8;
+    color: #000000;
+    background-color: #ea271e;
 }
 
 #planners {
-    position: relative;
-    color: black;
-    background-color: white;
-    z-index: 8;
+    color: #000000;
+    background-color: #f18e25;
+}
+
+#contact {
+    color: #000000;
+    background-color: #edd034;
 }
 
 /* PAGINA 1 (WELKOMSCHERM) */
 
 #welkom .welkomtekst {
-    height: 40%;
-    width: 40%;
-    font-size: 20px;
+    font-size: 150%;
     margin: 0 auto;
-    padding-top: 50px;
+    margin-top: 2em;
     text-shadow: 0 0 28px rgba(0, 0, 0, 1);
 }
 
 #welkom .welkomschermbutton {
-    height: 150px;
-    margin: 0 auto;
-    width: auto;
-    margin-top: 100px;
+    display: inline-block;
+    margin: 2em auto 0;
     opacity: 0.8;
+}
+
+#welkom .welkomschermbutton img {
+    height: 150px;
+    width: auto;
 }
 
 @media screen and (max-width: 1025px) {
@@ -129,17 +197,20 @@ main {
         margin-top: 5%;
     }
 
-    #navigatie li {
+    #navigatie li a {
         padding: 10px;
     }
-    
+
     #welkom .welkomtekst {
         width: 60%;
     }
 
     #welkom .welkomschermbutton {
+        margin-top: .5em;
+    }
+
+    #welkom .welkomschermbutton img {
         height: 75px;
-        position: relative;
-        margin-top: 250px;
+
     }
 }

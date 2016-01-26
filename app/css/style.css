@@ -14,10 +14,6 @@ Randkleuren:
 
 /* Main CSS */
 
-* {
-    outline: 1px solid;
-}
-
 body, html {
     margin: 0;
     padding: 0;

@@ -1,10 +1,26 @@
+/*
+Randkleuren:
+#0480ad
+#7262a8
+#de2880
+#982045
+#ea271e
+#f18e25
+#edd034
+#0798d3
+#cdd12f
+#008d67
+*/
+
 /* Main CSS */
 
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 14px;
+    line-height: 1.428;
 }
 
 a {
@@ -12,9 +28,39 @@ a {
     color: black;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 257%;
+}
+
+h2 {
+    font-size: 214%;
+}
+
+h3 {
+    font-size: 171%;
+}
+
+h4 {
+    font-size: 129%;
+}
+
+h5 {
+    font-size: 100%;
+}
+
+h6 {
+    font-size: 86%;
+}
+
 /* NAVBAR */
 
 #navigatie {
+    font-family: 'Open Sans', sans-serif;
     height: 150px;
     position: fixed;
     top: 0;
@@ -55,52 +101,55 @@ main {
 /* PAGES */
 
 .pagina {
+    position: relative;
     padding-top: 150px;
+    padding-bottom: 1em;
 }
 
-#welkom {
-    position: relative;
-    color: white;
-    background-image: url(../img/School.png);
-    background-size: cover;
-    width: 100%;
-    z-index: 8;
+.pagina .content {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
 }
 
+#welkom {
+    color: white;
+    background-color: #0480ad;
+    background-image: url(../img/School.png);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.pagina .content > img {
+    max-width: 100%;
+}
+
 #rooster {
-    position: relative;
-    color: black;
-    background-color: white;
-    z-index: 8;
+    color: #000000;
+    background-color: #7262a8;
+    text-align: center;
 }
 
 #cijfers {
-    position: relative;
-    color: white;
-    background-color: gray;
-    z-index: 8;
+    color: #ffffff;
+    background-color: #de2880;
 }
 
 #aanwezigheid {
-    position: relative;
-    color: black;
-    background-color: white;
-    z-index: 8;
+    color: #ffffff;
+    background-color: #982045;
 }
 
 #leermiddelen {
-    position: relative;
-    color: white;
-    background-color: gray;
-    z-index: 8;
+    color: #000000;
+    background-color: #ea271e;
 }
 
 #planners {
-    position: relative;
-    color: black;
-    background-color: white;
-    z-index: 8;
+    color: #000000;
+    background-color: #f18e25;
 }
 
 /* PAGINA 1 (WELKOMSCHERM) */
